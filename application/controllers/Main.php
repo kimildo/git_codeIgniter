@@ -34,6 +34,7 @@
 		public function masterMethod()
         {
 			$master = array();
+			return $master;
 		}
 
     }
