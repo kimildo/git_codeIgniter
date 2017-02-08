@@ -28,7 +28,11 @@
             $this->load->view('main', $params);
 
             $debugbarRenderer->renderHead();
-
         }
+		
+		public function branchMethod()
+        {
+			
+		}
 
     }
