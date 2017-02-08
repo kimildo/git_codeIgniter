@@ -37,6 +37,16 @@
 			return $master;
 		}
 
+        /**
+         * @return array
+         * 오류사항 수정
+         */
+		public function masterAddMethod()
+        {
+            $master = array();
+            return $master;
+        }
+
         public function branchMethod()
         {
 
