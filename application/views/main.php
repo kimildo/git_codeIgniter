@@ -12,10 +12,11 @@
 <html>
 <head>
     <title>hello</title>
+    <?php echo $debugbarRenderer->renderHead() ?>
 </head>
 <body>
 <?php echo $hello?><br />
-111 Page rendered in <strong>{elapsed_time}</strong> seconds.<br />
+Page rendered in <strong>{elapsed_time}</strong> seconds.<br />
 <?php if (!empty($result)) { ?>
 <?php foreach($result as $row):?>
     <h3><?=$row->title?></h3>

@@ -22,10 +22,13 @@
         {
             $debugbar = new StandardDebugBar();
             $debugbarRenderer = $debugbar->getJavascriptRenderer();
-            $debugbar["messages"]->addMessage("hello world!");
+            //$debugbar["messages"]->addMessage("hello world!");
 
             $params = ['hello'=>$this->_hello, 'debugbarRenderer'=>$debugbarRenderer];
             $this->load->view('main', $params);
+
+            $debugbarRenderer->renderHead();
+
         }
 
     }
