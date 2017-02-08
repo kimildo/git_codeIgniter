@@ -33,7 +33,7 @@
 		
 		public function masterMethod()
         {
-			
+			$master = array();
 		}
 
     }
