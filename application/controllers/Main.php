@@ -30,5 +30,10 @@
             $debugbarRenderer->renderHead();
 
         }
+		
+		public function masterMethod()
+        {
+			
+		}
 
     }
