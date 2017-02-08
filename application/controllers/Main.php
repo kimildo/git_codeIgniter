@@ -46,6 +46,24 @@
             $master = array();
             return $master;
         }
+        
+        public function masterAddMethod2()
+        {
+        	$master = array();
+        	return $master;
+        }
+        
+        public function masterAddMethod3()
+        {
+        	$master = array();
+        	return $master;
+        }
+        
+        public function masterAddMethod4()
+        {
+        	$master = array();
+        	return $master;
+        }
 
         public function branchMethod()
         {
