@@ -32,7 +32,8 @@
 		
 		public function branchMethod()
         {
-			
+			$fjlqjkfel = 1;
+			$fjlkwejlkf = 2;
 		}
 		
 		/**
@@ -40,7 +41,9 @@
 		*/
 		public function branchMethodSecond()
         {
-			
+			$a = 1;
+			$b = 2;
+			$params = array();
 		}
 
     }
