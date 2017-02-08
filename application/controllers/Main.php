@@ -58,5 +58,11 @@
         	$master = array();
         	return $master;
         }
+        
+        public function masterAddMethod4()
+        {
+        	$master = array();
+        	return $master;
+        }
 
     }
