@@ -33,12 +33,11 @@
 
         /**
          * @return array
-         * 오류사항 수정
+         * 오류사항 수정 - 급수정
          */
         public function masterMethod()
         {
-            $master = array();
-            return $master;
+            return [];
         }
 
         /**
