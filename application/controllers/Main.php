@@ -47,6 +47,10 @@
             return $master;
         }
         
+        /**
+         * @return array
+         * dfefe
+         */
         public function masterAddMethod2()
         {
         	$master = array();
