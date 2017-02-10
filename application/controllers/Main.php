@@ -68,6 +68,12 @@
         	$master = array();
         	return $master;
         }
+        
+        public function masterAddMethod5()
+        {
+        	$master = array();
+        	return $master;
+        }
 
         public function branchMethod()
         {
