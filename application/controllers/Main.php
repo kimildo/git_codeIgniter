@@ -37,6 +37,11 @@
          */
         public function masterMethod()
         {
+            return $this->callAjax();
+        }
+
+        protected function callAjax()
+        {
             return [];
         }
 
