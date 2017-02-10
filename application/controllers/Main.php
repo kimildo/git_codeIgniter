@@ -30,52 +30,6 @@
             $debugbarRenderer->renderHead();
 
         }
-		
-		public function masterMethod()
-        {
-			$master = array();
-			return $master;
-		}
-
-        /**
-         * @return array
-         * 오류사항 수정
-         */
-		public function masterAddMethod()
-        {
-            $master = array();
-            return $master;
-        }
-        
-        /**
-         * @return array
-         * dfefe
-         */
-        public function masterAddMethod2()
-        {
-        	$master = array();
-        	return $master;
-        }
-        
-        public function masterAddMethod3()
-        {
-        	$master = array();
-        	return $master;
-        }
-        
-        public function masterAddMethod4()
-        {
-        	$master = array();
-        	return $master;
-        }
-        
-        public function masterAddMethod5()
-        {
-        	$master = array();
-        	return $master;
-        }
-        
-        
         
         /**
          * 이 아래가 브랜치 작업분입니다.
