@@ -8,6 +8,7 @@
     class Main extends CI_Controller
     {
         private $_hello;
+        private $_model;
 
         public function __construct()
         {
@@ -24,11 +25,26 @@
             $debugbarRenderer = $debugbar->getJavascriptRenderer();
             //$debugbar["messages"]->addMessage("hello world!");
 
-            $params = ['hello'=>$this->_hello, 'debugbarRenderer'=>$debugbarRenderer];
-            $this->load->view('main', $params);
+            if (empty($this->_model)) {
+                $this->_getModel();
+            }
 
+            $data = $this->_model->mybook();
+            $jdata = json_encode($data);
+
+            $debugbar["messages"]->addMessage($jdata);
+
+            $params = ['hello'=>$this->_hello, 'debugbarRenderer'=>$debugbarRenderer];
+
+            $this->load->view('main', $params);
             $debugbarRenderer->renderHead();
 
+        }
+
+        protected function _getModel($modelName = 'Testdb_model')
+        {
+            $this->load->model($modelName);
+            $this->_model = $this->{$modelName};
         }
 
         /**
