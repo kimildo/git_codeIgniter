@@ -83,6 +83,16 @@
             $b = 2;
             $params = array();
         }
+        
+        public function branchMethodThird()
+        {
+        
+        	$a = 1;
+        	$b = 2;
+        	$c = $a+$b;
+        	$d = 0;
+        	return [$a, $b, $c];
+        }
 
 
     }
