@@ -44,6 +44,16 @@
         {
             return [];
         }
+        
+        /**
+         * 마스터 오류 수정합니다.
+         * @return array
+         */
+        protected function fixedMasterMethod()
+        {
+        	return [];
+        }
+        
 
         /**
          * 이 아래가 브랜치 작업분입니다.
