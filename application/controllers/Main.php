@@ -59,6 +59,14 @@
         	$this->_helper = $this->{$helper};
         }
         
+        private function masterPrivateAdd()
+        {
+        	
+        }
+        
+        
+        
+        
 
         
 
