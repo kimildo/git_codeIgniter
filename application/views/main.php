@@ -17,12 +17,13 @@
 <body>
 <?php echo $hello?><br />
 Page rendered in <strong>{elapsed_time}</strong> seconds.<br />
-<?php if (!empty($result)) { ?>
-<?php foreach($result as $row):?>
-    <h3><?=$row->title?></h3>
-    <p><?=$row->text?></p>
+<?php if (!empty($jdata)) { ?>
+<?php foreach($jdata as $row) { ?>
+    <h3>seq : <?=$row->seq?></h3>
+    <p>user_name : <?=$row->user_name?></p>
+    <p>reg_date : <?=$row->reg_date?></p>
     <br />
-<?php endforeach; } ?>
+<?php }} ?>
 
 <?php echo $debugbarRenderer->render() ?>
 </body>

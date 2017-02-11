@@ -29,12 +29,16 @@
                 $this->_getModel();
             }
 
-            $data = $this->_model->mybook();
+            $data = $this->_model->getSimpleData();
             $jdata = json_encode($data);
 
             $debugbar["messages"]->addMessage($jdata);
 
-            $params = ['hello'=>$this->_hello, 'debugbarRenderer'=>$debugbarRenderer];
+            $params = [
+                'hello'=>$this->_hello,
+                'jdata'=> $data,
+                'debugbarRenderer'=>$debugbarRenderer
+            ];
 
             $this->load->view('main', $params);
             $debugbarRenderer->renderHead();

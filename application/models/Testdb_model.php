@@ -11,7 +11,7 @@
             parent::__construct();
         }
 
-        public function mybook(){
+        public function getSimpleData(){
             return $this->db->query('SELECT * FROM test_table')->result();
         }
 
