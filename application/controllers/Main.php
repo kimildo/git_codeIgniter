@@ -9,6 +9,7 @@
     {
         private $_hello;
         private $_model;
+        private $_helper;
 
         public function __construct()
         {
@@ -51,63 +52,15 @@
             $this->_model = $this->{$modelName};
         }
 
-        /**
-         * @return array
-         * 오류사항 수정 - 급수정
-         */
-        public function masterMethod()
-        {
-            return $this->callAjax();
-        }
-
-        protected function callAjax()
-        {
-            return [];
-        }
         
-        /**
-         * 마스터 오류 수정합니다.
-         * @return array
-         */
-        protected function fixedMasterMethod()
+        protected function _getHelper($helper = 'Array') 
         {
-        	return [];
+        	$this->load->helper($helper);
+        	$this->_helper = $this->{$helper};
         }
         
 
-        /**
-         * 이 아래가 브랜치 작업분입니다.
-         *
-         *
-         */
-        public function branchMethod()
-        {
-
-            $fjlqjkfel = 1;
-            $fjlkwejlkf = 2;
-        }
-
-        public function branchMethodSecond()
-        {
-
-            $a = 1;
-            $b = 2;
-            $params = array();
-        }
-
-        public function branchMethodThird()
-        {
-
-            $a = 1;
-            $b = 2;
-            $c = $a+$b;
-            $d = 0;
-            return [$a, $b, $c];
-        }
-
-        /**
-         * 작업 완료 - branch -> master
-         */
+        
 
 
 
