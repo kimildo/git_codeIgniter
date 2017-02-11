@@ -59,6 +59,16 @@
         	$this->_helper = $this->{$helper};
         }
         
+        protected function _branchMethod()
+        {
+        	
+        }
+        
+        protected function _branchMethod2()
+        {
+        	 
+        }
+        
 
         
 
