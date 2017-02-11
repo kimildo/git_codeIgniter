@@ -69,6 +69,11 @@
         	 
         }
         
+        protected function _branchMethod3()
+        {
+        
+        }
+        
 
         
 
