@@ -59,6 +59,11 @@
         	$this->_helper = $this->{$helper};
         }
         
+        private function masterPrivateAdd()
+        {
+        	 
+        }
+        
         protected function _branchMethod()
         {
         	
@@ -73,7 +78,6 @@
         {
         
         }
-        
 
         
 
