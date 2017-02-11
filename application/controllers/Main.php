@@ -1,13 +1,13 @@
 <?php
 
     defined('BASEPATH') OR exit('No direct script access allowed');
-
-    require 'vendor/autoload.php';
+    
     use DebugBar\StandardDebugBar;
 
     class Main extends CI_Controller
     {
         private $_hello;
+        private $_DB;
         private $_model;
         private $_helper;
 
@@ -30,10 +30,12 @@
                 $this->_getModel();
             }
 
+            $wdata = $this->_model->addSimpleData();
             $data = $this->_model->getSimpleData();
+            
             $jdata = json_encode($data);
 
-            $debugbar["messages"]->addMessage($jdata);
+            $debugbar["messages"]->addMessage($wdata);
 
             $params = [
                 'hello'=>$this->_hello,
@@ -48,7 +50,7 @@
 
         protected function _getModel($modelName = 'Testdb_model')
         {
-            $this->load->model($modelName);
+        	$this->load->model($modelName);
             $this->_model = $this->{$modelName};
         }
 
